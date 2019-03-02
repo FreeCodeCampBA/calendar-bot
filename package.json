@@ -1,0 +1,22 @@
+{
+  "name": "calendar-bot",
+  "version": "0.0.1",
+  "description": "Calendar bot for slack with an integration with MeetupJS-ar calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeCodeCampBA/calendar-bot.git"
+  },
+  "author": "@hdf1986",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreeCodeCampBA/calendar-bot/issues"
+  },
+  "homepage": "https://github.com/FreeCodeCampBA/calendar-bot#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
