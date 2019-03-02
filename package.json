@@ -4,6 +4,8 @@
   "description": "Calendar bot for slack with an integration with MeetupJS-ar calendar",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,13 @@
   },
   "homepage": "https://github.com/FreeCodeCampBA/calendar-bot#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "moment-timezone": "^0.5.23",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "slack-node": "^0.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
