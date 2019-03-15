@@ -25,7 +25,7 @@ const sendMessage = (options) => {
 
 const run = async () => {
   const time = moment.tz(new Date(), TIMEZONE);
-  const morning = time.isBetween(moment('00:00:00', timeFormat).tz(TIMEZONE), moment('12:00:00', timeFormat).tz(TIMEZONE))
+  const morning = time.isBetween(moment.tz('00:00:00', TIMEZONE), moment.tz('12:00:00', TIMEZONE))
   console.log(moment('00:00:00', timeFormat).tz(TIMEZONE))
   console.log(moment.tz(new Date(), TIMEZONE))
   const dayToRetrieve = morning ? time : time.add(1, 'day')
