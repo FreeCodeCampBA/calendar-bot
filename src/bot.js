@@ -26,6 +26,7 @@ const sendMessage = (options) => {
 const run = async () => {
   const time = moment(new Date(), TIMEZONE);
   const morning = time.isBetween(moment('00:00:00', timeFormat).tz(TIMEZONE), moment('12:00:00', timeFormat).tz(TIMEZONE))
+  console.log(moment('00:00:00', timeFormat).tz(TIMEZONE))
   const dayToRetrieve = morning ? time : time.add(1, 'day')
   const events = (await getEvents(dayToRetrieve));
   const profile = getBot();
