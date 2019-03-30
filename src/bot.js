@@ -29,7 +29,7 @@ const run = async () => {
   const morning = time.isBetween(moment.tz(new Date(), TIMEZONE).startOf('day'), moment.tz(new Date(), TIMEZONE).startOf('day').add(12, 'hours'))
   console.log(moment('00:00:00', timeFormat).tz(TIMEZONE))
   console.log(moment.tz(new Date(), TIMEZONE))
-  const dayToRetrieve = morning ? time : time.add(2, 'day')
+  const dayToRetrieve = morning ? time : time.add(1, 'day')
   const events = (await getEvents(dayToRetrieve));
   const profile = getBot();
 
