@@ -18,6 +18,7 @@ const sendMessage = (options) => {
   slack.setWebhook(HOOK_URL)
   slack.webhook(options, (error, response) => {
     if (error) return console.error(error)
+    console.log(response)
 
     return console.log('Mensaje en Slack exitoso!')
   })
